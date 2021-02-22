@@ -2,6 +2,7 @@
 
 1. Links
 2. Badges
+3. Lists
 
 
  */
@@ -69,5 +70,38 @@ a {
     }
     .badge--small {
         font-size: 1.2rem;
+    }
+}
+
+/* 3. Lists */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings)
+}
+
+.list--inline {
+    color: var(--color-headings)
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--checks {
+    list-style-image: url(../assets/icons/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--checks .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--checks .list__item {
+        padding-left: 0;
     }
 }
