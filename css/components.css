@@ -7,6 +7,7 @@
 5. Buttons
 6. Inputs
 7. Inputs group
+8. Cards
 
  */
 
@@ -238,4 +239,25 @@ a {
 
 .input-group .btn {
     margin: 4px;
+}
+
+/* 8. Cards */
+
+
+
+
+
+
+
+
+
+
+
+/* style-legend */
+
+.style-legend {
+    display: inline;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 4rem 0 0.7rem 0rem;
 }

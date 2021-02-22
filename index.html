@@ -14,10 +14,13 @@
 		<link rel="stylesheet" href="./css/components.css" />
 		<title>Moshify</title>
 	</head>
-	<body>
+	<body style="margin-left: 6rem;">
+		<legend class="style-legend">Anchor</legend>
 		<a href="#" class="link-arrow">Learn More</a>
+		<legend class="style-legend">Badge Primary & Small Secondary</legend>
 		<span class="badge badge--primary">10% off</span>
 		<span class="badge badge--small badge--secondary">Secondary</span>
+		<legend class="style-legend">List inline</legend>
 		<ul class="list list--inline">
 			<li class="list__item">Item 1</li>
 			<li class="list__item">Item 2</li>
@@ -30,6 +33,7 @@
 			<li class="list__item">Item 9</li>
 			<li class="list__item">Item 10</li>
 		</ul>
+		<legend class="style-legend">List checks</legend>
 		<ul class="list list--checks">
 			<li class="list__item">item 1</li>
 			<li class="list__item">item 2</li>
@@ -37,7 +41,7 @@
 			<li class="list__item">item 4</li>
 			<li class="list__item">item 5</li>
 		</ul>
-
+		<legend class="style-legend">Icons</legend>
 		<svg class="icon icon--primary">
 			<use xlink:href="./assets/images/sprite.svg#snap"></use>
 		</svg>
@@ -47,18 +51,26 @@
 				<use xlink:href="./assets/images/sprite.svg#snap"></use>
 			</svg>
 		</span>
+		<legend class="style-legend">
+			Button Primary, Secondary, Accent, Outline
+		</legend>
+		<button class="btn btn--primary">Primary</button>
+		<button class="btn btn--secondary">Secondary</button>
+		<button class="btn btn--accent">Accent</button>
+		<button class="btn btn--outline">Outline</button>
+		<legend class="style-legend">Button block</legend>
 		<button class="btn btn--primary btn--block">Buy Now</button>
-		<button class="btn btn--primary btn--block">Buy Now</button>
-		<button class="btn btn--secondary">Cancel</button>
-		<button class="btn btn--accent">Reset</button>
-		<button class="btn btn--outline">Reset</button>
-		<a href="" class="btn btn--accent">Buy Now</a>
-
+		<legend class="style-legend" style="padding-bottom: 3rem;">
+			Anchor button
+		</legend>
+		<a href="" class="btn btn--accent">Anchor button</a>
+		<legend class="style-legend">Input</legend>
 		<input
 			type="text"
 			class="input"
 			placeholder="Enter Domain Name Please"
 		/>
+		<legend class="style-legend">Input with button</legend>
 		<div class="input-group">
 			<input
 				type="text"
