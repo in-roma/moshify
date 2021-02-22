@@ -7,14 +7,14 @@
 		<link rel="stylesheet" href="./css/normalise.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="stylesheet" href="./css/components.css" />
 		<title>Moshify</title>
 	</head>
-	<body style="margin-left: 6rem;">
+	<body style="padding: 1rem 8rem; width: 100vw;">
 		<legend class="style-legend">Anchor</legend>
 		<a href="#" class="link-arrow">Learn More</a>
 		<legend class="style-legend">Badge Primary & Small Secondary</legend>
@@ -27,11 +27,6 @@
 			<li class="list__item">Item 3</li>
 			<li class="list__item">Item 4</li>
 			<li class="list__item">Item 5</li>
-			<li class="list__item">Item 6</li>
-			<li class="list__item">Item 7</li>
-			<li class="list__item">Item 8</li>
-			<li class="list__item">Item 9</li>
-			<li class="list__item">Item 10</li>
 		</ul>
 		<legend class="style-legend">List checks</legend>
 		<ul class="list list--checks">
@@ -79,37 +74,77 @@
 			/>
 			<button class="btn btn--accent">Search</button>
 		</div>
-		<legend class="style-legend">Primary Card</legend>
-		<div style="width: 30%; padding: 4rem;">
-			<div class="card card--primary">
-				<header class="card__header">
-					Card Title
-				</header>
-				<div class="card__body">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Eum mollitia ratione similique, a iste facere blanditiis
-					totam accusamus maxime repellendus itaque pariatur illo
-					doloremque minima ullam. Ad blanditiis veritatis sed
-					deleniti unde ex aliquid ipsum, libero culpa ea est dolorum
-					dignissimos, vel alias ipsa in. Corrupti, ut! Reprehenderit,
-					inventore eaque.
+
+		<div style="display: flex;">
+			<div style="display: flex; flex-direction: column; width: 30vw;">
+				<legend class="style-legend">
+					Primary Card
+				</legend>
+				<div style="width: auto; padding: 4rem;">
+					<div class="card card--primary">
+						<header class="card__header">
+							Card Title
+						</header>
+						<div class="card__body">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Eum mollitia ratione similique, a iste facere
+							blanditiis totam accusamus maxime repellendus itaque
+							pariatur illo doloremque minima ullam. Ad blanditiis
+							veritatis sed deleniti unde ex aliquid ipsum, libero
+							culpa ea est dolorum dignissimos, vel alias ipsa in.
+							Corrupti, ut! Reprehenderit, inventore eaque.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="display: flex; flex-direction: column; width: 30vw;">
+				<legend class="style-legend">Secondary card</legend>
+				<div style="width: auto; padding: 4rem;">
+					<div class="card card--secondary">
+						<header class="card__header">
+							Card Title
+						</header>
+						<div class="card__body">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Eum mollitia ratione similique, a iste facere
+							blanditiis totam accusamus maxime repellendus itaque
+							pariatur illo doloremque minima ullam. Ad blanditiis
+							veritatis sed deleniti unde ex aliquid ipsum, libero
+							culpa ea est dolorum dignissimos, vel alias ipsa in.
+							Corrupti, ut! Reprehenderit, inventore eaque.
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<legend class="style-legend">Secondary card</legend>
-		<div style="width: 30%; padding: 4rem;">
-			<div class="card card--secondary">
-				<header class="card__header">
-					Card Title
-				</header>
-				<div class="card__body">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Eum mollitia ratione similique, a iste facere blanditiis
-					totam accusamus maxime repellendus itaque pariatur illo
-					doloremque minima ullam. Ad blanditiis veritatis sed
-					deleniti unde ex aliquid ipsum, libero culpa ea est dolorum
-					dignissimos, vel alias ipsa in. Corrupti, ut! Reprehenderit,
-					inventore eaque.
+		<div style="display: flex; flex-direction: column; width: 35vw;">
+			<legend class="style-legend">Plan component</legend>
+			<div style="width: auto; padding: 4rem;">
+				<div class="plan">
+					<div class="card card--secondary">
+						<header class="card__header">
+							<h3 class="plan_name">Entry</h3>
+							<span class="plan__price">$14</span>
+							<span class="plan__billing-cycle">/month</span>
+							<span class="badge badge--secondary badge--small"
+								>10% OFF</span
+							>
+							<span class="plan__description"
+								>Easy start on the cloud</span
+							>
+						</header>
+						<div class="card__body">
+							<ul class="list list--checks">
+								<li class="list__item">Unlimited Websites</li>
+								<li class="list__item">Unlimited Bandwidth</li>
+								<li class="list__item">100 GB SSD Storage</li>
+								<li class="list__item">3GB RAM</li>
+							</ul>
+							<button class="btn btn--outline btn btn--block">
+								buy now
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
