@@ -13,7 +13,7 @@ IMPORTANT
 
 /* 1. Setup main layout rules */
 
-/* Colors */
+/* Colors & Styles*/
 
 :root {
     --color-primary: #2584ff;
@@ -21,6 +21,8 @@ IMPORTANT
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 
 *, *::after, *::before {
@@ -61,7 +63,6 @@ h3 {
 p {
     margin-top: 0;
 }
-
 
 
 @media screen and (min-width: 1024px) {

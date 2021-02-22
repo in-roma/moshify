@@ -5,6 +5,8 @@
 3. Lists
 4. Icons
 5. Buttons
+6. Inputs
+7. Inputs group
 
  */
 
@@ -175,7 +177,6 @@ a {
     color: #fff;
 }
 
-
 .btn--outline {
     background: #fff;
     color: var(--color-headings);
@@ -193,10 +194,46 @@ a {
 
 }
 
-
-
 @media screen and (min-width: 1024px) {
     .btn {
         font-size: 1.5rem;
     }
+}
+
+/* 6. Inputs */
+
+.input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+    }
+}
+
+/* 7. Input groups */
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .input {
+    border: none;
+    flex-grow: 1;
+}
+
+.input-group .btn {
+    margin: 4px;
 }
