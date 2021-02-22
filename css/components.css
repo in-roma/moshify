@@ -3,6 +3,7 @@
 1. Links
 2. Badges
 3. Lists
+4. Icons
 
 
  */
@@ -104,4 +105,26 @@ a {
     .list--checks .list__item {
         padding-left: 0;
     }
+}
+
+/* 4. Icons */
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+.icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
 }
