@@ -11,6 +11,7 @@
 9. Plan component
 10. Popular plan component
 11. Media Objects
+12. Quote
 
  */
 
@@ -352,6 +353,53 @@ a {
     margin-top: .5rem;
 }
 
+/* 12. Quote */
+
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body-darker);
+    line-height: 1.4;
+}
+
+.quote__text::before {
+    content: open-quote;
+}
+
+.quote__text::after {
+    content: close-quote;
+}
+
+.quote__line {
+    position: relative;
+    bottom: 5px;
+}
+
+.quote__author {
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.quote__company {
+    color: var(--color-headings);
+    font-size: 2rem;
+    font-weight: normal;
+    opacity: .4;
+
+}
+@media screen and (min-width: 1024px) {
+    .quote {
+        font-size: 2rem;
+    }
+    .quote__author {
+        font-size: 2.4rem;
+    }
+    .quote__company {
+        font-size: 1.6rem;
+    }
+}
 
 /* style-legend */
 
