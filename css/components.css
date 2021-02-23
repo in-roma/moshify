@@ -12,6 +12,7 @@
 10. Popular plan component
 11. Media Objects
 12. Quote
+13. Grids 
 
  */
 
@@ -398,6 +399,21 @@ a {
     }
     .quote__company {
         font-size: 1.6rem;
+    }
+}
+
+/* 13. Grids */
+
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1X2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid--1X3 {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
