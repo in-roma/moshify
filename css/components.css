@@ -14,6 +14,7 @@
 12. Quote
 13. Grids 
 14. Testimonial 
+15. Callouts 
 
  */
 
@@ -209,10 +210,14 @@ a {
     color: #fff;
 }
 
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .btn--block {
     width: 100%;
     display: inline-block;
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -423,10 +428,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .grid--1X2 {
+    .grid--1x2 {
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid--1X3 {
+    .grid--1x3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -460,6 +465,45 @@ a {
     }
 }
 
+/* 15. Callouts  */
+
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading {
+    color:#fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content {
+        text-align: left;
+    }
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
 
 /* style-legend */
 
