@@ -9,7 +9,8 @@
 7. Inputs group
 8. Cards
 9. Plan component
-10. Popular badge
+10. Popular plan component
+11. Media Objects
 
  */
 
@@ -333,6 +334,23 @@ a {
     right: 5%;
 }
 
+/* 11. Media Object */
+
+.media {
+    display: flex;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__image {
+    margin-top: .5rem;
+}
 
 
 /* style-legend */
