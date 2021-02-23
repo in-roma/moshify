@@ -9,6 +9,7 @@
 7. Inputs group
 8. Cards
 9. Plan component
+10. Popular badge
 
  */
 
@@ -317,6 +318,21 @@ a {
         font-size: 1.7rem;
     }
 }
+
+/* 10. Popular Badge */
+.plan--popular .card__header {
+    position: relative;
+}
+
+.plan--popular .card__header::before {
+    content: url(../assets/images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
+}
+
 
 
 /* style-legend */
