@@ -18,6 +18,7 @@
 16. Collapsible 
 17. Block 
 18. Navigation bar 
+19. Hero
 
  */
 
@@ -569,12 +570,12 @@ a {
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical)+ 4rem);
-    clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
 }
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical)+ 4rem);
-    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 80%);
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 90%);
 }
 
 /*  18. Navigation bar  */
@@ -639,6 +640,32 @@ a {
         border-bottom: 0;
     }
 
+}
+/* 19. Hero */
+
+.hero--skewed {
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
 }
 
 /* style-legend */
