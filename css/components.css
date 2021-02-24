@@ -16,6 +16,7 @@
 14. Testimonial 
 15. Callouts 
 16. Collapsible 
+17. Block 
 
  */
 
@@ -541,8 +542,39 @@ a {
     font-size: 3rem;
 }
 
+/*  17. Block  */
 
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+}
 
+.block__header {
+    text-align: center;
+}
+
+.block__heading {
+    margin-top: 0;
+}
+
+.block--dark {
+    background: #000;
+    color: #7b858b;
+}
+
+.block--dark .block__heading{
+    color: #fff;
+}
+
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical)+ 4rem);
+    clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+}
+
+.block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical)+ 4rem);
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 80%);
+}
 
 
 /* style-legend */

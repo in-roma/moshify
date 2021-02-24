@@ -43,6 +43,11 @@ body {
     color: var(--color-body);
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 h1,h2,h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
