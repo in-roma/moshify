@@ -781,6 +781,22 @@ a {
 /* 23. Showcase block */
 
 
+.block-showcase__img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .block-showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+
+    .block-showcase__img {
+        width: auto;
+        max-width: 700px;
+        justify-self: end;
+    }
+}
 
 
 /* style-legend */
