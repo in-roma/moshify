@@ -20,6 +20,7 @@
 18. Navigation bar 
 19. Hero
 20. Domain block
+21. Plans block
 
  */
 
@@ -300,6 +301,13 @@ a {
     color: #fff;
 }
 
+.card--primary .badge--primary{
+    background: #126de4;
+    color: #fff;
+}
+
+
+
 .card--secondary .badge--secondary{
     background: #02cdf1;
     color: #fff;
@@ -307,6 +315,10 @@ a {
 
 
 /* 9. Plan component */
+
+.plan {
+    transition: transform .2s ease-out;
+}
 
 .plan_name {
     color: #fff;
@@ -337,6 +349,15 @@ a {
     margin-bottom: 2rem;
 }
 
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
+}
+
+
 @media screen and (min-width: 1024px) {
 
     .plan_name {
@@ -354,6 +375,10 @@ a {
 }
 
 /* 10. Popular Badge */
+.plan--popular {
+    transform: scale(1.1);
+}
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -713,6 +738,17 @@ a {
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     }
 
+}
+
+/* 21. Plans block */
+
+.block-plans .grid {
+    gap: 8rem 6rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* style-legend */
