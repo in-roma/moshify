@@ -21,7 +21,8 @@
 19. Hero
 20. Domain block
 21. Plans block
-22. Feature blocks
+22. Feature block
+23. Showcase block
 
  */
 
@@ -752,7 +753,7 @@ a {
     margin: 0 auto;
 }
 
-/* 22. Feature blocks */
+/* 22. Feature block */
 
 .feature {
     gap: 4rem 2rem;
@@ -776,6 +777,11 @@ a {
         order: 2;
     }
 }
+
+/* 23. Showcase block */
+
+
+
 
 /* style-legend */
 
