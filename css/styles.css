@@ -30,6 +30,11 @@ IMPORTANT
     box-sizing: border-box;
 } 
 
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
+
 html {
     font-size: 62.5%; /* --> equivalent to 10px  */
 }
@@ -87,6 +92,7 @@ p {
     
     h3 {
         font-size: 2.4rem;
+        font-weight: 500;
     }
 
 }

@@ -98,7 +98,6 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings)
 }
 
 .list--inline {
@@ -113,6 +112,7 @@ a {
 .list--checks {
     list-style-image: url(../assets/icons/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings)
 }
 
 .list--checks .list__item {
@@ -398,6 +398,7 @@ a {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -678,9 +679,6 @@ a {
 }
 /* 19. Hero */
 
-.hero--skewed {
-    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
-}
 
 .hero__tagline {
     font-size: 2rem;
@@ -781,7 +779,7 @@ a {
 /* 23. Showcase block */
 
 
-.block-showcase__img {
+.block-showcase__img > img {
     width: 100%;
 }
 
@@ -790,11 +788,14 @@ a {
         grid-template-columns: 50% 50%;
     }
 
-
     .block-showcase__img {
+        justify-self: end;
+    }
+
+    .block-showcase__img > img {
+
         width: auto;
         max-width: 700px;
-        justify-self: end;
     }
 }
 
