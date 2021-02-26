@@ -243,6 +243,22 @@ a {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .btn {
+        padding: 2rem 2rem;
+    }
+    
+    .btn span {
+        display: none;
+    }
+    .btn .icon {
+        width: 2.8rem;
+        height: 2rem;
+        margin: auto auto;
+        vertical-align: middle;
+    }
+}
+
 /* 6. Inputs */
 
 .input {
@@ -277,6 +293,7 @@ a {
     border: none;
     flex-grow: 1;
     padding: 1.5rem 1rem;
+    width: 0;
 }
 
 .input-group .btn {
