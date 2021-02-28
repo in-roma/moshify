@@ -92,3 +92,9 @@ p {
     }
 
 }
+
+/* Page rules - Components structure */
+
+.callout-signup {
+    transform: translateY(5rem);
+}
