@@ -30,14 +30,27 @@ html {
 
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: var(--color-body);
 }
 
 .container {
+    width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .body {
+        font-size: 2.4rem;
+    }
+
+    .container {
+        max-width: 1140px;
+        padding: 0 4rem;
+    }
+
 }
 
 h1,h2,h3 {
@@ -64,13 +77,33 @@ p {
 }
 
 
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 6rem;
     }
     
     h2 {
@@ -705,8 +738,15 @@ a {
 }
 
 .block__heading {
-    margin-top: 0;
+    margin-top: 2rem;
 }
+
+@media screen and (min-width: 768px) {
+    .block__heading {
+        margin-top: 8rem;
+    }
+}
+
 
 .block--dark {
     background: #000;
@@ -734,8 +774,9 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
     align-items: center;
+
 }
 
 .nav__logo {
@@ -743,7 +784,6 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 1rem;
 }
 
 .nav__logo span {
@@ -761,8 +801,8 @@ a {
 }
 
 .nav__item {
-
-    padding-left: 4rem;
+    font-size: 1.6rem;
+    padding-left: 2rem;
     border-bottom: 2px #222 solid;
 }
 
@@ -786,10 +826,10 @@ a {
 
 @media screen and (min-width: 768px) {
     .nav {
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
     }
     .nav__logo {
-        padding-left: 2rem;
+        padding-left: 0rem;
 
     }
     .nav__toggler {
@@ -801,7 +841,7 @@ a {
         font-size: 1.6rem;
         max-height: 100%;
         opacity: 1;
-        padding-right: 2rem;
+        padding-right: 0rem;
     }
     .nav__item {
         border-bottom: 0;
@@ -812,10 +852,10 @@ a {
 
 
 .hero__tagline {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #b9c3cf;
     letter-spacing: 1px;
-    margin: 2rem 0 5rem;
+    margin: 2rem 1rem 4rem 1rem;
 }
 
 .hero__img {
@@ -830,7 +870,18 @@ a {
         text-align: left;
         align-self: center;
     }
+    .hero__tagline {
+        font-size: 2.2rem;
+        margin: 2rem 0rem 4rem 0rem;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .hero__tagline {
+        font-size: 2.6rem;
+
+}
+
 
 /* 20. Domain block */
 
