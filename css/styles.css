@@ -47,16 +47,16 @@ h1,h2,h3 {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 1.6rem;
 }
 
 p {
@@ -256,7 +256,7 @@ a {
 
 /* Button Structures */
 .btn {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
@@ -719,12 +719,12 @@ a {
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
+    clip-path: polygon(0% 0%,100% 0%,100% 96%,0% 100%);
 }
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 90%);
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 96%)
 }
 
 /*  18. Navigation bar  */
@@ -739,7 +739,18 @@ a {
 }
 
 .nav__logo {
-    transform: translateY(5px);
+    transform: translateY(-2px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav__logo span {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+
 }
 
 .nav__list {
@@ -951,7 +962,7 @@ a {
 
 .footer__brand img {
     width: 100%;
-    max-width: 230px;
+    max-width: 44px;
 }
 
 .footer__copyright {
