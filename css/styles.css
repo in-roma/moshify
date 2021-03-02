@@ -743,6 +743,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 1rem;
 }
 
 .nav__logo span {
@@ -756,10 +757,12 @@ a {
 .nav__list {
     width: 100%;
     margin: 0;
+    padding-right: 1rem;
 }
 
 .nav__item {
-    padding: 0.5rem 2rem;
+
+    padding-left: 4rem;
     border-bottom: 2px #222 solid;
 }
 
@@ -785,6 +788,10 @@ a {
     .nav {
         padding: 1rem 2rem;
     }
+    .nav__logo {
+        padding-left: 2rem;
+
+    }
     .nav__toggler {
         display: none;
     }
@@ -794,7 +801,7 @@ a {
         font-size: 1.6rem;
         max-height: 100%;
         opacity: 1;
-
+        padding-right: 2rem;
     }
     .nav__item {
         border-bottom: 0;
