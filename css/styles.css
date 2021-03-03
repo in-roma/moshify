@@ -814,12 +814,12 @@ a {
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%,100% 0%,100% 96%,0% 100%);
+    clip-path: polygon(0% 0%,100% 0%,100% 94%,0% 100%);
 }
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 96%)
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 94%)
 }
 
 /*  18. Navigation bar  */
