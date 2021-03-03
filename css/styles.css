@@ -1056,8 +1056,13 @@ a {
 }
 
 .footer__section {
-    padding: 2rem;
+    padding: 3rem 0 1rem 0;
     border-bottom: 1px solid #393939;
+}
+
+.footer__section a {
+    margin: .5rem 0 0 .5rem;
+    font-size: 1.6rem;
 }
 
 .footer__section .list {
@@ -1065,13 +1070,20 @@ a {
 }
 
 .footer__heading {
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 600;
+    align-self: end;
 }
 
 .footer__brand {
-    margin-top: 5rem;
-    text-align: center;
+    padding: 5rem 0rem 0 0;
+
+}
+
+.footer__brand a {
+    display: flex;
+    justify-content: center;
 }
 
 .footer__brand img {
@@ -1079,16 +1091,25 @@ a {
     max-width: 44px;
 }
 
-.footer__copyright {
-    font-size: 2.1rem;
+.footer__brand p {
+    font-size: 1.4rem;
     color: #fff;
     opacity: .3;
+    max-width: none;
+}
 
+@media screen and (min-width: 500px) {
+    .footer__section a {
+        font-size: 1.8rem;
+    }
+    .footer__heading {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .footer__grid {
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
     }
     .footer .collapsible__chevron {
         display: none;
@@ -1099,17 +1120,34 @@ a {
     }
     .footer__brand {
         order: -1;
-        margin-top: 1rem;
+        min-width: 8rem;
+        transform: translateY(-0.8rem);
     }
     .footer__copyright {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .footer__section {
         border: none;
+        margin: 2rem;
     }
     .footer__heading {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
+    .footer__section a {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .footer__heading {
+        font-size: 2rem;
+    }
+    .footer__section a {
+        font-size: 1.6rem;
+    }
+
 }
 
 /* style-legend */
