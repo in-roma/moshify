@@ -642,7 +642,6 @@ a {
     }
 }
 
-
 @media screen and (min-width: 500px) {
     .quote__text {
         font-size: 2.4rem;
@@ -708,40 +707,45 @@ a {
     padding: 4rem;
     border-radius: 5px;
 }
+  
 .callout--primary {
     background: var(--color-primary);
     color: #fff;
 }
-
+  
 .callout__heading {
-    color:#fff;
+    color: #fff;
     margin-top: 0;
     font-size: 3rem;
 }
-
-.callout__content {
-    text-align: center;
-}
-
+  
 .callout .btn {
     justify-self: center;
     align-self: center;
 }
-
-
+  
+.callout__content {
+    text-align: center;
+    font-size: 2rem;
+}
+  
 @media screen and (min-width: 768px) {
     .callout .grid--1x2 {
-        grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
     }
-    .callout__content {
+    .callout__heading {
         text-align: left;
+      }
+    .callout__content p {
+      text-align: left;
+      font-size: 1.8rem;
     }
     .callout .btn {
-        justify-self: start;
-        margin: 0 2rem;
+      justify-self: start;
+      margin: 0 2rem;
     }
 }
-
+  
 /* 16. Collapsible */
 
 .collapsible__header {
