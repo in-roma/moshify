@@ -885,6 +885,7 @@ a {
 @media screen and (min-width: 1024px) {
     .hero__tagline {
         font-size: 2.6rem;
+    }
 }
 
 /* 20. Domain block */
@@ -912,15 +913,24 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     justify-items: center;
     margin: 0 auto;
+    max-width: 700px;
   }
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+    .block-domain__prices {
+      font-size: 2rem;
+    }
+  }
+
+
+@media screen and (min-width: 768px) {
     .block-domain__prices {
       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      font-size: 2rem;
     }
   }
   
