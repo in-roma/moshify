@@ -599,7 +599,6 @@ a {
 /* 12. Quote */
 
 .quote {
-    font-size: 3rem;
     font-style: italic;
     color: var(--color-body-darker);
     line-height: 1.4;
@@ -618,8 +617,12 @@ a {
     bottom: 5px;
 }
 
+.quote__text {
+    font-size: 1.6rem;
+}
+
 .quote__author {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     font-style: normal;
     margin-bottom: 0;
@@ -627,18 +630,25 @@ a {
 
 .quote__company {
     color: var(--color-headings);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: normal;
     opacity: .4;
 
 }
 
-@media screen and (min-width: 1024px) {
-    .quote {
+@media screen and (min-width: 400px) {
+    .quote__text {
         font-size: 2rem;
     }
-    .quote__author {
+}
+
+
+@media screen and (min-width: 500px) {
+    .quote__text {
         font-size: 2.4rem;
+    }
+    .quote__author {
+        font-size: 2.6rem;
     }
     .quote__company {
         font-size: 1.6rem;
